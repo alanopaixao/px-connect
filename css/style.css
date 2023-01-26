@@ -1,0 +1,6 @@
+@import "./global/reset.css";
+@import "./global/colors.css";
+
+@import "./header.css";
+@import "./components/fonts.css";
+@import "./components/buttons.css";
