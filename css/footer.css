@@ -1,0 +1,67 @@
+.footer-bg {
+  height: auto;
+  background-color: #fff;
+}
+
+.footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: center;
+  text-transform: uppercase;
+  padding: 60px 0;
+  font-size: 0.8rem;
+  border-top: 1px solid var(--gray-200);
+}
+.footer-info {
+  display: flex;
+  align-items: center;
+}
+.footer-info-text {
+  display: flex;
+  flex-direction: column;
+  padding-left: 20px;
+  border-left: 3px solid var(--gray-200);
+}
+.footer-info-text p,
+.footer-info-text a {
+  text-align: start;
+  color: #555;
+  font-family: var(--font-text);
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 5px;
+}
+
+.footer-info-text a {
+  display: flex;
+  align-items: center;
+  font-weight: 400;
+  gap: 15px;
+}
+
+.footer-info-logo img {
+  height: 50px;
+  padding-right: 20px;
+}
+
+.footer-anatel img {
+  height: 30px;
+  opacity: 0.5;
+}
+.anotation {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  font-family: var(--font-text);
+  background: #222;
+  text-align: center;
+  padding: 2rem 0;
+  font-size: 1.2rem;
+  color: white;
+}
+
+.anotation a {
+  color: white;
+  font-weight: 800;
+}

@@ -8,20 +8,23 @@
   justify-content: space-between;
   color: var(--gray-900);
   gap: 40px;
-  padding: 20px;
+  padding: 10px;
 }
 
+/* Efeito para ser aplicado ao rolar a pagina */
 .header-row {
   backdrop-filter: blur(10px);
   border-bottom: 1px solid var(--gray-200);
-  background-color: var(--gray-50);
+  background-color: rgba(255, 255, 255, 0.5);
+  backdrop-filter: blur(10px);
+  transition: ease 1s;
 }
 
 .logo {
   margin: auto 0;
 }
 .logo img {
-  height: 50px;
+  height: 40px;
 }
 
 .header ul {
@@ -33,29 +36,37 @@
   gap: 30px;
   cursor: pointer;
 }
-
-.plans-content-bg {
-  height: 100vh;
+.intro-title {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
+  justify-content: center;
+  height: 600px;
 }
-
-.header-content {
-  text-align: center;
-}
-.header-content h1 {
+.intro-title h1 {
+  color: var(--gray-900);
+  font-size: 4rem;
   font-family: var(--font-title);
   font-weight: 700;
-  letter-spacing: 5;
-  font-size: 4.5rem;
-  color: var(--gray-900);
-  padding-bottom: 20px;
 }
 
-.header-content p {
+.intro-title p {
+  text-transform: uppercase;
+  color: var(--gray-800);
+  font-size: 1.5rem;
+  padding: 20px;
   font-family: var(--font-text);
-  font-weight: 400;
-  font-size: 1.3rem;
+  font-weight: 700;
+}
+
+main {
+  height: 120vh;
+}
+
+.section-title {
   color: var(--gray-900);
+  font-size: 3rem;
+  font-family: var(--font-title);
+  font-weight: 700;
+  padding-bottom: 50px;
 }

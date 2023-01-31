@@ -26,8 +26,10 @@ html {
 }
 
 .gradient {
+  transition: 0.5s;
+  background-size: 200% auto;
   background-image: linear-gradient(
-    20deg,
+    45deg,
     #ff512f 0%,
     #f09819 51%,
     #ff512f 100%
@@ -36,4 +38,35 @@ html {
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   color: black;
+  touch-action: manipulation;
+}
+
+.gradient:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.gradient-animation {
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff0000,
+    #fffb00,
+    #ff0000,
+    #ff0000
+  );
+  background-size: 400%;
+  animation: gradient-animation 20s linear infinite;
+  padding: 4px;
+  border-radius: 15px;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 400%;
+  }
 }
