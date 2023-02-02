@@ -1,0 +1,96 @@
+.plans {
+  padding: 0 40px;
+}
+.plans-container {
+  display: flex;
+  gap: 40px;
+  padding: 40px 0;
+  left: 0;
+  overflow-x: scrool;
+  overflow-y: hidden;
+}
+.card {
+  background-color: #fff;
+  border: 1px solid var(--gray-200);
+  border-radius: 15px;
+  width: max-content;
+  height: max-content;
+  padding: 4px;
+  box-shadow: 2px 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+.card:last-child {
+  margin-right: 10px;
+}
+.card-title {
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.card-content {
+  background-color: white;
+  padding: 20px 30px;
+  border-radius: 0 0 15px 15px;
+}
+
+.card-itens li {
+  padding: 4px 0;
+  white-space: nowrap;
+}
+
+.plans-cards::-webkit-scrollbar {
+  display: none;
+}
+
+.card-back {
+  width: max-content;
+  height: max-content;
+  box-shadow: 2px 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+.card hr {
+  border: 1px solid var(--gray-100);
+  margin: 20px;
+}
+
+.card-title p {
+  text-transform: uppercase;
+}
+
+.card-content li {
+  display: flex;
+  align-items: center;
+}
+.card-content li img {
+  padding-right: 10px;
+}
+.card-back h2 {
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.card-footer {
+  display: flex;
+  flex-direction: column;
+}
+.card-footer span {
+  text-align: center;
+  text-transform: uppercase;
+  font-size: 2.5rem;
+  font-family: var(--font-text);
+  font-weight: 400;
+}
+.card-footer p {
+  text-align: center;
+  padding-bottom: 10px;
+}
+
+.card-footer button {
+  text-align: center;
+  padding: 10px 20px;
+  width: max-content;
+  margin: 0 auto;
+}
+
+.card-footer button:hover {
+  box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+}

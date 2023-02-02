@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -13,268 +13,397 @@
     <link rel="stylesheet" href="./css/style.css" />
   </head>
   <body>
-    <header class="header-bg header-row">
-      <nav class="header container-nav">
-        <div class="logo">
-          <img src="./src/svg/pxconnect-black.svg" alt="Logo" />
+    <header class="header-bg">
+      <nav class="nav-menu container-header">
+        <img class="navmenu-logo" src="./src/svg/pxconnect-black.svg" alt="" />
+        <div class="nav-menu-main">
+          <ul class="font-2-m gray-700">
+            <li><a href="#home">Início</a></li>
+            <li><a href="#plans">Planos</a></li>
+            <li><a href="#questions">Dúvidas</a></li>
+            <li>
+              <a href="https://www.speedtest.net/server/52580" target="_blank"
+                >Speedtest</a
+              >
+            </li>
+            <a
+              class="button-gradient"
+              href="https://pxconnect.sgp.net.br/central/"
+              target="_blank"
+              >Assinante</a
+            >
+          </ul>
         </div>
-        <ul>
-          <li>Início</li>
-          <li>Benefícios</li>
-          <li>planos</li>
-          <li>Speedtest</li>
-          <li class="button-central" role="button">Assinante</li>
-        </ul>
+
+        <div class="sidebar" id="sidebar">
+          <ul class="font-2-m gray-700">
+            <img id="close-btn" src="./src/svg/close.svg" alt="" />
+            <li><a href="#home">Início</a></li>
+            <li><a href="#plans">Planos</a></li>
+            <li><a href="#questions">Dúvidas</a></li>
+            <li>
+              <a href="https://www.speedtest.net/server/52580" target="_blank"
+                >Speedtest</a
+              >
+            </li>
+            <a
+              class="button-gradient"
+              href="https://pxconnect.sgp.net.br/central/"
+              target="_blank"
+              >Assinante</a
+            >
+          </ul>
+        </div>
+        <img
+          class="sidebar-button"
+          id="sidebar-button"
+          src="./src/svg/navmenu.svg"
+          alt=""
+        />
       </nav>
     </header>
     <main class="main-bg">
-      <section class="intro-title">
-        <h1>Venha para a <span class="gradient">PX Connect!</span></h1>
-        <p>
-          Internet <span class="gradient">100% Fibra Óptica</span> que veio para
-          mudar
-          <span class="gradient">Itaitinga.</span>
-        </p>
-      </section>
-      <section class="plans-bg">
-        <div class="plans container">
-          <h1 class="section-title">
-            Conheça <span class="gradient">nossos planos.</span>
+      <!-- section intro -->
+      <section class="intro">
+        <div class="title container">
+          <h1 class="">
+            Venha para a <span class="gradient">PX Connect!</span>
           </h1>
-          <div class="plans-cards">
-            <div class="card-back card-gray">
-              <h2 class="plan-text">game turbo</h2>
-              <div class="card">
-                <div class="card-title">
-                  <h2>600</h2>
-                  <p>megas</p>
-                </div>
-                <hr />
-                <ul class="card-content">
-                  <li>
-                    <img src="./src/svg/download.svg" alt="" /> 250 Megas de
-                    Downoad
-                  </li>
-                  <li>
-                    <img src="./src/svg/uppload.svg" alt="" />250 Megas de
-                    Downoad
-                  </li>
-                  <li><img src="./src/svg/wifi.svg" alt="" />WI-FI TURBO</li>
-                  <li>
-                    <img src="./src/svg/support.svg" alt="" />Suporte
-                    Especializado
-                  </li>
-                </ul>
-                <hr />
-                <div class="card-footer">
-                  <span class="gradient">R$119,90</span>
-                  <p>Por mês</p>
-                  <button class="button-central">Assine agora</button>
-                </div>
-              </div>
-            </div>
-            <div class="card-back gradient-animation">
-              <h2 class="best-plan-text">mais vendido</h2>
-              <div class="card">
-                <div class="card-title">
-                  <h2>400</h2>
-                  <p>megas</p>
-                </div>
-                <hr />
-                <ul class="card-content">
-                  <li>
-                    <img src="./src/svg/download.svg" alt="" /> 250 Megas de
-                    Downoad
-                  </li>
-                  <li>
-                    <img src="./src/svg/uppload.svg" alt="" />250 Megas de
-                    Downoad
-                  </li>
-                  <li><img src="./src/svg/wifi.svg" alt="" />WI-FI TURBO</li>
-                  <li>
-                    <img src="./src/svg/support.svg" alt="" />Suporte
-                    Especializado
-                  </li>
-                </ul>
-                <hr />
-                <div class="card-footer">
-                  <span class="gradient">R$119,90</span>
-                  <p>Por mês</p>
-                  <button class="button-central">Assine agora</button>
-                </div>
-              </div>
-            </div>
+          <p class="">
+            Internet <span class="gradient">100% Fibra Óptica</span> que veio
+            para mudar
+            <span class="gradient">Itaitinga.</span>
+          </p>
+        </div>
+      </section>
+      <!-- section plans -->
+      <section class="plans-bg" id="plans">
+        <div class="plans container">
+          <div class="title">
+            <h1 class="font-1-xxl-b">
+              Nossos <span class="gradient">Planos.</span>
+            </h1>
+          </div>
+          <div class="plans-container">
+            <!-- card -->
 
-            <div class="card-back card-gray">
-              <h2 class="plan-text">plano família</h2>
-              <div class="card">
+            <div class="card">
+              <h2 class="card-title font-1-m-b gray-800">game turbo</h2>
+              <div class="card-content">
                 <div class="card-title">
-                  <h2>300</h2>
-                  <p>megas</p>
+                  <h2 class="font-1-xxl-b">600</h2>
+                  <p class="font-1-m">megas</p>
                 </div>
                 <hr />
-                <ul class="card-content">
-                  <li>
+                <ul class="card-itens">
+                  <li class="font-2-s gray-900">
                     <img src="./src/svg/download.svg" alt="" /> 250 Megas de
                     Downoad
                   </li>
-                  <li>
+                  <li class="font-2-s gray-900">
                     <img src="./src/svg/uppload.svg" alt="" />250 Megas de
                     Downoad
                   </li>
-                  <li><img src="./src/svg/wifi.svg" alt="" />WI-FI TURBO</li>
-                  <li>
-                    <img src="./src/svg/support.svg" alt="" />Suporte
+                  <li class="font-2-s gray-900">
+                    <img src="./src/svg/wifi.svg" alt="" />Wi-fi Dual Band
+                  </li>
+                  <li class="font-2-s gray-900">
+                    <img src="./src/svg/help-svgrepo-com.svg" alt="" />Suporte
                     Especializado
                   </li>
                 </ul>
                 <hr />
                 <div class="card-footer">
                   <span class="gradient">R$119,90</span>
-                  <p>Por mês</p>
-                  <button class="button-central">Assine agora</button>
+                  <p class="font-2-s gray-700">Por mês</p>
+                  <button class="button-gradient font-2-s">Assine agora</button>
                 </div>
               </div>
             </div>
-            <div class="card-back card-gray">
-              <h2 class="plan-text">plano lazer</h2>
-              <div class="card">
+            <div class="card gradient-animation">
+              <h2 class="card-title font-1-m-b gray-50">game turbo</h2>
+              <div class="card-content">
                 <div class="card-title">
-                  <h2>200</h2>
-                  <p>megas</p>
+                  <h2 class="font-1-xxl-b">600</h2>
+                  <p class="font-1-m">megas</p>
                 </div>
                 <hr />
-                <ul class="card-content">
-                  <li>
+                <ul class="card-itens">
+                  <li class="font-2-s gray-900">
                     <img src="./src/svg/download.svg" alt="" /> 250 Megas de
                     Downoad
                   </li>
-                  <li>
+                  <li class="font-2-s gray-900">
                     <img src="./src/svg/uppload.svg" alt="" />250 Megas de
                     Downoad
                   </li>
-                  <li><img src="./src/svg/wifi.svg" alt="" />WI-FI TURBO</li>
-                  <li>
-                    <img src="./src/svg/support.svg" alt="" />Suporte
+                  <li class="font-2-s gray-900">
+                    <img src="./src/svg/wifi.svg" alt="" />Wi-fi Dual Band
+                  </li>
+                  <li class="font-2-s gray-900">
+                    <img src="./src/svg/help-svgrepo-com.svg" alt="" />Suporte
                     Especializado
                   </li>
                 </ul>
                 <hr />
                 <div class="card-footer">
                   <span class="gradient">R$119,90</span>
-                  <p>Por mês</p>
-                  <button class="button-central">Assine agora</button>
+                  <p class="font-2-s gray-700">Por mês</p>
+                  <button class="button-gradient font-2-s">Assine agora</button>
                 </div>
               </div>
             </div>
-            <div class="card-back card-gray">
-              <h2 class="plan-text">plano básic</h2>
-              <div class="card">
+            <div class="card">
+              <h2 class="card-title font-1-m-b gray-800">game turbo</h2>
+              <div class="card-content">
                 <div class="card-title">
-                  <h2>80</h2>
-                  <p>megas</p>
+                  <h2 class="font-1-xxl-b">600</h2>
+                  <p class="font-1-m">megas</p>
                 </div>
                 <hr />
-                <ul class="card-content">
-                  <li>
+                <ul class="card-itens">
+                  <li class="font-2-s gray-900">
                     <img src="./src/svg/download.svg" alt="" /> 250 Megas de
                     Downoad
                   </li>
-                  <li>
+                  <li class="font-2-s gray-900">
                     <img src="./src/svg/uppload.svg" alt="" />250 Megas de
                     Downoad
                   </li>
-                  <li><img src="./src/svg/wifi.svg" alt="" />WI-FI TURBO</li>
-                  <li>
-                    <img src="./src/svg/support.svg" alt="" />Suporte
+                  <li class="font-2-s gray-900">
+                    <img src="./src/svg/wifi.svg" alt="" />Wi-fi Dual Band
+                  </li>
+                  <li class="font-2-s gray-900">
+                    <img src="./src/svg/help-svgrepo-com.svg" alt="" />Suporte
                     Especializado
                   </li>
                 </ul>
                 <hr />
                 <div class="card-footer">
                   <span class="gradient">R$119,90</span>
-                  <p>Por mês</p>
-                  <button class="button-central">Assine agora</button>
+                  <p class="font-2-s gray-700">Por mês</p>
+                  <button class="button-gradient font-2-s">Assine agora</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h2 class="card-title font-1-m-b gray-800">game turbo</h2>
+              <div class="card-content">
+                <div class="card-title">
+                  <h2 class="font-1-xxl-b">600</h2>
+                  <p class="font-1-m">megas</p>
+                </div>
+                <hr />
+                <ul class="card-itens">
+                  <li class="font-2-s gray-900">
+                    <img src="./src/svg/download.svg" alt="" /> 250 Megas de
+                    Downoad
+                  </li>
+                  <li class="font-2-s gray-900">
+                    <img src="./src/svg/uppload.svg" alt="" />250 Megas de
+                    Downoad
+                  </li>
+                  <li class="font-2-s gray-900">
+                    <img src="./src/svg/wifi.svg" alt="" />Wi-fi Dual Band
+                  </li>
+                  <li class="font-2-s gray-900">
+                    <img src="./src/svg/help-svgrepo-com.svg" alt="" />Suporte
+                    Especializado
+                  </li>
+                </ul>
+                <hr />
+                <div class="card-footer">
+                  <span class="gradient">R$119,90</span>
+                  <p class="font-2-s gray-700">Por mês</p>
+                  <button class="button-gradient font-2-s">Assine agora</button>
+                </div>
+              </div>
+            </div>
+            <div class="card">
+              <h2 class="card-title font-1-m-b gray-800">game turbo</h2>
+              <div class="card-content">
+                <div class="card-title">
+                  <h2 class="font-1-xxl-b">600</h2>
+                  <p class="font-1-m">megas</p>
+                </div>
+                <hr />
+                <ul class="card-itens">
+                  <li class="font-2-s gray-900">
+                    <img src="./src/svg/download.svg" alt="" /> 250 Megas de
+                    Downoad
+                  </li>
+                  <li class="font-2-s gray-900">
+                    <img src="./src/svg/uppload.svg" alt="" />250 Megas de
+                    Downoad
+                  </li>
+                  <li class="font-2-s gray-900">
+                    <img src="./src/svg/wifi.svg" alt="" />Wi-fi Dual Band
+                  </li>
+                  <li class="font-2-s gray-900">
+                    <img src="./src/svg/help-svgrepo-com.svg" alt="" />Suporte
+                    Especializado
+                  </li>
+                </ul>
+                <hr />
+                <div class="card-footer">
+                  <span class="gradient">R$119,90</span>
+                  <p class="font-2-s gray-700">Por mês</p>
+                  <button class="button-gradient font-2-s">Assine agora</button>
                 </div>
               </div>
             </div>
           </div>
         </div>
       </section>
-      <section class="questions-bg container">
-        <h1 class="">Perguntas <span class="gradient">Frequentes.</span></h1>
-        <div class="questions">
-          <dl>
-            <div class="questions-item">
-              <dt class="">
-                Qual forma de pagamento vocês aceitam?
-                <img src="./src/svg/down.svg" alt="" />
-              </dt>
-              <dd class="">
-                Aceitamos pagamentos parcelados em todos os cartões de crédito.
-                Para pagamentos à vista também aceitarmos PIX e Boleto através
-                do PagSeguro.
-              </dd>
-            </div>
-            <div class="questions-item">
-              <dt class="">
-                Qual forma de pagamento vocês aceitam?
-                <img src="./src/svg/down.svg" alt="" />
-              </dt>
-              <dd class="">
-                Aceitamos pagamentos parcelados em todos os cartões de crédito.
-                Para pagamentos à vista também aceitarmos PIX e Boleto através
-                do PagSeguro.
-              </dd>
-            </div>
-            <div class="questions-item">
-              <dt class="">
-                Qual forma de pagamento vocês aceitam?
-                <img src="./src/svg/down.svg" alt="" />
-              </dt>
-              <dd class="">
-                Aceitamos pagamentos parcelados em todos os cartões de crédito.
-                Para pagamentos à vista também aceitarmos PIX e Boleto através
-                do PagSeguro.
-              </dd>
-            </div>
-          </dl>
+      <!-- section questions -->
+      <section class="questions-bg" id="questions">
+        <div class="questions container">
+          <div class="title">
+            <h1 class="font-1-xxl-b">
+              Perguntas <span class="gradient">Frequentes.</span>
+            </h1>
+          </div>
+          <div class="questions-container">
+            <dl>
+              <div class="questions-item">
+                <dt>
+                  <button
+                    class="font-1-m-b yellow-900"
+                    aria-expanded="true"
+                    aria-controls="question1"
+                  >
+                    O que é fibra óptica?
+                  </button>
+                </dt>
+                <dd class="font-2-m gray-600 active" id="question1">
+                  A fibra óptica é uma estrutura de vidro cilíndrica,
+                  transparente, flexível e com dimensões microscópicas,
+                  parecidas com um fio de cabelo. É uma forma de transmissão que
+                  permite o tráfego de dados com velocidades próximas à
+                  velocidade da luz. O sinal da fibra óptica é transmitido por
+                  meio de reflexões de raios laser ao longo de todo o cabo,
+                  atingindo uma capacidade de transmissão única.
+                </dd>
+              </div>
+              <div class="questions-item">
+                <dt>
+                  <button
+                    class="font-1-m-b yellow-900"
+                    aria-expanded="false"
+                    aria-controls="question2"
+                  >
+                    O que é fibra óptica?
+                  </button>
+                </dt>
+                <dd class="font-2-m gray-600" id="question2">
+                  Aceitamos pagamentos parcelados em todos os cartões de
+                  crédito. Para pagamentos à vista também aceitarmos PIX e
+                  Boleto através do PagSeguro.sdfsdfsdfsdfsdf dsf sdf sd fsd f
+                  sd fs d
+                </dd>
+              </div>
+              <div class="questions-item">
+                <dt>
+                  <button
+                    class="font-1-m-b yellow-900"
+                    aria-expanded="false"
+                    aria-controls="question3"
+                  >
+                    O que é Wifi Performance?
+                  </button>
+                </dt>
+                <dd class="font-2-m gray-600" id="question3">
+                  É disponibilizado em comodato para os clientes um modem de
+                  última geração. Dependendo da viabilidade técnica da região ou
+                  dos aparelhos utilizados pelo cliente pode ser um modem que
+                  trabalha na frequência 2.4 ou um dual band no qual opera com 2
+                  frequências de rede (2.4Ghz e 5.0Ghz).
+                </dd>
+              </div>
+              <div class="questions-item">
+                <dt>
+                  <button
+                    class="font-1-m-b yellow-900"
+                    aria-expanded="false"
+                    aria-controls="question4"
+                  >
+                    Minha internet está lenta, o que faço?
+                  </button>
+                </dt>
+                <dd class="font-2-m gray-600" id="question4">
+                  <ul>
+                    <li>
+                      Desligue o modem e o roteador particular, caso possua;
+                    </li>
+                    <li>Espere durante 5 min;</li>
+                    <li>Ligue os equipamentos e aguarde mais 5 min;</li>
+                    <li>Verifique se as leds (luzes) estão todas acesas;</li>
+                    <li>
+                      Faça uma limpeza no seu navegador, excluindo cookies e
+                      arquivos temporários;
+                    </li>
+                  </ul>
+                </dd>
+              </div>
+              <div class="questions-item">
+                <dt>
+                  <button
+                    class="font-1-m-b yellow-900"
+                    aria-expanded="false"
+                    aria-controls="question5"
+                  >
+                    Quais formas de pagamento?
+                  </button>
+                </dt>
+                <dd class="font-2-m gray-600" id="question5">
+                  Aceitamos pagamentos parcelados em todos os cartões de
+                  crédito. Para pagamentos à vista também aceitarmos PIX e
+                  Boleto através do PagSeguro.sdfsdfsdfsdfsdf dsf sdf sd fsd f
+                  sd fs d
+                </dd>
+              </div>
+            </dl>
+          </div>
         </div>
       </section>
-      <section class="about-bg" id="about">
+      <!-- section about -->
+      <section class="about-bg">
         <div class="about container">
-          <div class="about-title">
-            <h1>Por que escolher a <span class="gradient">PX Connect.</span></h1>
-          <div class="about-box">
-            <div class="about-box-item">
-              <img src="./src/svg/cable.svg" alt="">
-              <h2>fibra óptica</h2>
-              <p>
+          <div class="title">
+            <h1 class="font-1-xxl-b">
+              Por que escolher a <span class="gradient">PX Connect.</span>
+            </h1>
+          </div>
+          <div class="about-container">
+            <div class="about-box">
+              <img src="./src/svg/cable.svg" alt="" />
+              <h2 class="font-1-l-b yellow-900">fibra óptica</h2>
+              <p class="font-2-m gray-600">
                 Nossa tecnologia de ponta oferece qualidade e redundância na sua
                 conexão com uma rede 100% Fibra Óptica até sua casa.
               </p>
             </div>
-            <div class="about-box-item">
-              <img src="./src/svg/support-callcenter.svg" alt="">
-              <h2>Atendimento</h2>
-              <p>
+            <div class="about-box">
+              <img src="./src/svg/support-callcenter.svg" alt="" />
+              <h2 class="font-1-l-b yellow-900">Atendimento</h2>
+              <p class="font-2-m gray-600">
                 Contamos com o melhor tempo de atendimento humanizado da região,
                 proporcionando uma melhor qualidade e segurança pra você.
               </p>
             </div>
-            <div class="about-box-item">
-              <img src="./src/svg/server.svg" alt="">
-              <h2>servidores</h2>
-              <p>
+            <div class="about-box">
+              <img src="./src/svg/server.svg" alt="" />
+              <h2 class="font-1-l-b yellow-900">Servidores</h2>
+              <p class="font-2-m gray-600">
                 Nós utilizamos os servidores do Youtube, Netflix, Google e
                 Facebook. Disponibilizamos de uma navegação muito mais rápida e
                 estável.
               </p>
             </div>
-            <div class="about-box-item">
-              <img src="./src/svg/document.svg" alt="">
-              <h2>rede homologada</h2>
-              <p>
+            <div class="about-box">
+              <img src="./src/svg/document.svg" alt="" />
+              <h2 class="font-1-l-b yellow-900">Rede homologada</h2>
+              <p class="font-2-m gray-600">
                 Os nossos planos são 100% adequados à nova resolução da ANATEL.
                 Você recebe o que pagou de verdade 24x7.
               </p>
@@ -282,43 +411,57 @@
           </div>
         </div>
       </section>
+      <!-- footer -->
       <footer class="footer-bg">
         <div class="footer container">
-          <div class="footer-info">
-            <div class="footer-info-logo">
-              <a href="#">
-                <img src="src/svg/pxconnect-black.svg" alt="" />
-              </a>
-            </div>
-            <div class="footer-info-text">
-
-                <p>PX Connect - CNPJ 37.575.754/0001-80</p>
-                <a
-                href="https://www.google.com.br/maps/place/PX+Connect/@-3.8878281,-38.5378799,15.75z/data=!4m5!3m4!1s0x7c751ef16b64e55:0x687bfa17e068304a!8m2!3d-3.8858298!4d-38.5286697"
-                target="_blank"
-              >
-                Rua D, 360 - Loteamento Novo Ancurí - Itaitinga - CE
-              </a>
-                <a href="mailto:suporte@pxconnect.com.br"> <img src="./src/svg/mail.svg" alt=""> suporte@pxconnect.com.br</a>
-                <a href="tel:+5585981096361"> <img src="./src/svg/phone.svg" alt=""> 85 98109 6361</a>
-              
-            </div>
+          <div class="footer-address">
+            <h1 class="font-1-s-b yellow-900">Nosso Endereço</h1>
+            <p class="font-2-s gray-800">Rua D - 360</p>
+            <p class="font-2-s gray-800">Ancuri - Itaitinga/CE</p>
           </div>
-          <div class="footer-anatel">
-            <img src="src/svg/anatel.svg" alt="" />
+          <div class="footer-map-site">
+            <h1 class="font-1-s-b yellow-900">Mapa do site</h1>
+            <p class="font-2-s gray-800">inicio</p>
+            <p class="font-2-s gray-800">inicio</p>
+            <p class="font-2-s gray-800">inicio</p>
+            <p class="font-2-s gray-800">inicio</p>
+          </div>
+          <div class="footer-info">
+            <h1 class="font-1-s-b yellow-900">Contato</h1>
+            <a class="font-2-s gray-800" href="mailto:suporte@pxconnect.com"
+              ><img src="./src/svg/mail.svg" alt="" /> suporte@pxconnect.com</a
+            >
+            <a class="font-2-s gray-800" href="tel:+5585981096361"
+              ><img src="./src/svg/phone.svg" alt="" /> 85 98109 6361</a
+            >
+          </div>
+          <div class="footer-app">
+            <h1 class="font-1-s-b yellow-900">APP Central do Assinante</h1>
+            <a
+              href="https://play.google.com/store/apps/details?id=br.net.tsmx.meuappprovedor&hl=pt_BR&gl=US"
+              target="_blank"
+            >
+              <img src="./src/img/google-play-badge.png" alt="" />
+            </a>
+            <a
+              href="https://apps.apple.com/br/app/meuappprovedor/id1637448837"
+              target="_blank"
+            >
+              <img src="./src/img/apple-app-store.png" alt="" />
+            </a>
           </div>
         </div>
-        <div class="anotation">
-          <p>
-            © <span id="date">2023</span> PX CONNECT. Todos os direitos
-            reservados.
-          </p>
-
+        <div class="footer-social">
+          <a href=""><img src="./src/svg/Facebook_black.svg" alt="" /></a>
+          <a href=""><img src="./src/svg/Instagram_black.svg" alt="" /></a>
+          <a href=""><img src="./src/svg/WhatsApp_black.svg" alt="" /></a>
+          <a href=""><img src="./src/svg/Geo_black.svg" alt="" /></a>
+        </div>
+        <div class="copyright font-2-xs gray-400">
+          <p>© 2023 PX CONNECT. Todos os direitos reservados.</p>
           <p>
             Desenvolvido por
-            <a href="https://www.linkedin.com/in/alanpaixao/" target="_blank">
-              Alan Paixão</a
-            >
+            <a class="font-2-xs-b gray-50" href="">Alan Paixão</a>.
           </p>
         </div>
       </footer>

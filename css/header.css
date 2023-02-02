@@ -1,72 +1,93 @@
 .header-bg {
   position: fixed;
   width: 100%;
+  backdrop-filter: blur(10px);
+  background-color: rgba(255, 255, 255, 0.5);
+  border-bottom: 1px solid var(--gray-200);
+  box-shadow: 0px 10px 10px -15px rgba(0, 0, 0, 0.2);
+  height: 70px;
+  z-index: 999;
 }
 
-.header {
+.nav-menu {
   display: flex;
   justify-content: space-between;
-  color: var(--gray-900);
-  gap: 40px;
-  padding: 10px;
+  height: 100%;
 }
 
-/* Efeito para ser aplicado ao rolar a pagina */
-.header-row {
-  backdrop-filter: blur(10px);
-  border-bottom: 1px solid var(--gray-200);
-  background-color: rgba(255, 255, 255, 0.5);
-  backdrop-filter: blur(10px);
-  transition: ease 1s;
+.navmenu-logo {
+  padding: 10px 0;
+}
+.nav-menu-main {
+  display: flex;
 }
 
-.logo {
-  margin: auto 0;
-}
-.logo img {
-  height: 40px;
-}
-
-.header ul {
+.nav-menu ul {
   display: flex;
   align-items: center;
-  font-size: 1rem;
-  font-family: var(--font-text);
-  display: flex;
-  gap: 30px;
-  cursor: pointer;
+  gap: 20px;
 }
-.intro-title {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  height: 600px;
+.nav-menu li {
+  transition: 0.2s all linear;
 }
-.intro-title h1 {
-  color: var(--gray-900);
-  font-size: 4rem;
-  font-family: var(--font-title);
-  font-weight: 700;
+.nav-menu li:hover {
+  color: var(--yellow-900);
+}
+.sidebar,
+.sidebar-button {
+  display: none;
 }
 
-.intro-title p {
-  text-transform: uppercase;
-  color: var(--gray-800);
-  font-size: 1.5rem;
-  padding: 20px;
-  font-family: var(--font-text);
-  font-weight: 700;
-}
+@media screen and (max-width: 800px) {
+  .sidebar {
+    z-index: 9999;
+  }
+  .navmenu-logo {
+    padding: 20px 0;
+  }
+  .nav-menu .nav-menu-main {
+    display: none;
+  }
+  .nav-menu .sidebar,
+  .nav-menu .sidebar-button {
+    display: block;
+    position: relative;
+  }
+  .sidebar-button {
+    height: calc(100% - 30px);
+    padding: 15px 0;
+  }
 
-main {
-  height: 120vh;
-}
-
-.section-title {
-  color: var(--gray-900);
-  font-size: 3rem;
-  font-family: var(--font-title);
-  font-weight: 700;
-  padding-bottom: 50px;
+  .sidebar-button:active {
+    transform: scale(0.95);
+  }
+  .sidebar ul {
+    position: fixed;
+    background-color: var(--gray-100);
+    border: 1px solid var(--gray-300);
+    border-radius: 0 0 0 20px;
+    box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.2);
+    top: 0;
+    right: 0px;
+    flex-direction: column;
+    height: max-content;
+    width: 250px;
+    gap: 40px;
+    padding: 60px 0;
+    transform: translateX(100%);
+    transition: 0.2s all linear;
+  }
+  .sidebar img {
+    position: absolute;
+    height: 50px;
+    top: 10px;
+    right: 20px;
+    cursor: pointer;
+  }
+  .sidebar img:active {
+    transform: scale(0.95);
+  }
+  .show-sidebar ul {
+    transform: translateX(0%);
+  }
 }

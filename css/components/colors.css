@@ -1,0 +1,130 @@
+:root {
+  --gray-50: #f9fafb;
+  --gray-100: #f3f4f6;
+  --gray-200: #e5e7eb;
+  --gray-300: #d1d5db;
+  --gray-400: #9ca3af;
+  --gray-500: #6b7280;
+  --gray-600: #4b5563;
+  --gray-700: #374151;
+  --gray-800: #1f2937;
+  --gray-900: #111827;
+  --yellow-50: #fefce8;
+  --yellow-100: #fee1bd;
+  --yellow-200: #fed3a5;
+  --yellow-300: #fec58e;
+  --yellow-400: #feb677;
+  --yellow-500: #fea663;
+  --yellow-600: #fea663;
+  --yellow-700: #fe9550;
+  --yellow-800: #ff833e;
+  --yellow-900: #ff6f2f;
+}
+
+.gray-50 {
+  color: var(--gray-50);
+}
+.gray-100 {
+  color: var(--gray-100);
+}
+.gray-200 {
+  color: var(--gray-200);
+}
+.gray-300 {
+  color: var(--gray-300);
+}
+.gray-400 {
+  color: var(--gray-400);
+}
+.gray-500 {
+  color: var(--gray-500);
+}
+.gray-600 {
+  color: var(--gray-600);
+}
+.gray-700 {
+  color: var(--gray-700);
+}
+.gray-800 {
+  color: var(--gray-800);
+}
+.gray-900 {
+  color: var(--gray-900);
+}
+.yellow-50 {
+  color: var(--yellow-50);
+}
+.yellow-100 {
+  color: var(--yellow-100);
+}
+.yellow-200 {
+  color: var(--yellow-200);
+}
+.yellow-300 {
+  color: var(--yellow-300);
+}
+.yellow-400 {
+  color: var(--yellow-400);
+}
+.yellow-500 {
+  color: var(--yellow-500);
+}
+.yellow-600 {
+  color: var(--yellow-600);
+}
+.yellow-700 {
+  color: var(--yellow-700);
+}
+.yellow-800 {
+  color: var(--yellow-800);
+}
+.yellow-900 {
+  color: var(--yellow-900);
+}
+
+.gradient {
+  transition: 0.5s;
+  background-size: 200% auto;
+  background-image: linear-gradient(
+    45deg,
+    #ff512f 0%,
+    #f09819 51%,
+    #ff512f 100%
+  );
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: black;
+  touch-action: manipulation;
+}
+
+.gradient:hover {
+  background-position: right center;
+  color: #fff;
+  text-decoration: none;
+}
+
+.gradient-animation {
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #ff0000,
+    #fffb00,
+    #ff0000,
+    #ff0000
+  );
+  background-size: 400%;
+  animation: gradient-animation 20s linear infinite;
+  padding: 4px;
+  border-radius: 15px;
+  border: none !important;
+}
+
+@keyframes gradient-animation {
+  0% {
+    background-position: 0;
+  }
+  100% {
+    background-position: 400%;
+  }
+}

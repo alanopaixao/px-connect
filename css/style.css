@@ -1,10 +1,11 @@
-@import "./global/reset.css";
-@import "./global/colors.css";
-
-@import "./header.css";
+@import "./components/reset.css";
+@import "./components/global.css";
 @import "./components/fonts.css";
+@import "./components/colors.css";
 @import "./components/buttons.css";
-@import "./cards.css";
-@import "./questions.css";
+
 @import "./about.css";
+@import "./plans.css";
 @import "./footer.css";
+@import "./questions.css";
+@import "./header.css";
