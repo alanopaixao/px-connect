@@ -4,13 +4,41 @@
 }
 
 .plans-container {
+  position: relative;
+}
+
+.plans-carrousel {
   display: flex;
   gap: 40px;
   padding: 40px 0;
   left: 0;
-  overflow-x: scrool;
+  overflow-x: auto;
   overflow-y: hidden;
+  position: relative;
 }
+
+.arrow-left,
+.arrow-right {
+  position: absolute;
+  top: 40%;
+  left: -10px;
+  right: auto;
+  bottom: 0;
+  width: 40px;
+  height: 40px;
+  background-color: #ff512f;
+  color: #fff;
+  border-radius: 50%;
+  cursor: pointer;
+  border: none;
+  z-index: 90;
+}
+
+.arrow-right {
+  right: -10px;
+  left: auto;
+}
+
 .card {
   background-color: #fff;
   border: 1px solid var(--gray-200);
@@ -19,6 +47,11 @@
   height: max-content;
   padding: 4px;
   box-shadow: 2px 10px 10px -5px rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+}
+
+.current-item {
+  opacity: 1;
 }
 .card:last-child {
   margin-right: 10px;
@@ -42,7 +75,7 @@
   white-space: nowrap;
 }
 
-.plans-container::-webkit-scrollbar {
+.plans-carrousel::-webkit-scrollbar {
   display: none;
 }
 
@@ -84,4 +117,28 @@
 
 .card-footer button:hover {
   box-shadow: 0px 10px 10px -5px rgba(0, 0, 0, 0.2);
+}
+
+@media screen and (max-width: 500px) {
+  .card {
+    opacity: 1;
+  }
+  .card:last-child {
+    margin-right: 50px;
+  }
+  .card:first-child {
+    margin-left: 50px;
+  }
+}
+
+@media screen and (max-width: 380px) {
+  .card {
+    opacity: 1;
+  }
+  .card:last-child {
+    margin-right: 30px;
+  }
+  .card:first-child {
+    margin-left: 30px;
+  }
 }

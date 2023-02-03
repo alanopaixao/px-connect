@@ -36,7 +36,7 @@ console.log(questions);
 // carrousel
 const controls = document.querySelectorAll(".control");
 let currentItem = 0;
-const items = document.querySelectorAll(".item");
+const items = document.querySelectorAll(".card");
 const maxItems = items.length;
 
 controls.forEach((control) => {
@@ -57,11 +57,12 @@ controls.forEach((control) => {
       currentItem = maxItems - 1;
     }
 
-    items.forEach((item) => item.classList.remove("current-item"));
+    items.forEach((card) => card.classList.remove("current-item"));
 
     items[currentItem].scrollIntoView({
-      behavior: "smooth",
       inline: "center",
+      behavior: "smooth",
+      block: "nearest",
     });
 
     items[currentItem].classList.add("current-item");
