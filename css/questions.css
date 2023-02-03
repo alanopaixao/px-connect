@@ -4,9 +4,6 @@
   background-color: #fff;
 }
 
-.questions-bg h1 {
-  padding-bottom: 60px;
-}
 .questions dl {
   display: flex;
   flex-direction: column;
