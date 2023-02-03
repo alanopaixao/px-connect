@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&family=Roboto:wght@400;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@100;400;700&family=Roboto:wght@100;400;700&display=swap");
 
 :root {
   --font-title: "Poppins", sans-serif;
@@ -75,6 +75,10 @@
 
 .font-1-xxxl {
   font: 400 4rem/1.125 "Poppins", sans-serif;
+}
+
+.font-1-xxxl-b {
+  font: 700 4rem/1.125 "Poppins", sans-serif;
 }
 
 .font-2-xxxl {

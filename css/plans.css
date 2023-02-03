@@ -1,6 +1,7 @@
 .plans-bg {
-  padding-top: 60px;
-  padding-bottom: 150px;
+  padding-top: 80px;
+  padding-bottom: 120px;
+  background-color: var(--gray-100);
 }
 
 .plans-container {

@@ -1,6 +1,10 @@
+.about-bg {
+  background-color: #fff;
+}
+
 .about {
-  padding-top: 60px;
-  padding-bottom: 150px;
+  padding-top: 80px;
+  padding-bottom: 120px;
 }
 .about-container {
   display: grid;
@@ -13,7 +17,7 @@
   align-items: center;
   padding: 30px 20px;
   border-radius: 20px;
-  background-color: #fff;
+  background-color: var(--gray-100);
   box-shadow: 0 10px 10px -5px rgba(0, 0, 0, 0.3);
   transform: translateY(0px);
   transition: 0.5s ease-in-out;

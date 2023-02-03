@@ -18,9 +18,11 @@
         <img class="navmenu-logo" src="./src/svg/pxconnect-black.svg" alt="" />
         <div class="nav-menu-main">
           <ul class="font-2-m gray-700">
-            <li><a href="#home">Início</a></li>
+            <li><a href="#intro">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
             <li><a href="#plans">Planos</a></li>
-            <li><a href="#questions">Dúvidas</a></li>
+
+            <li><a href="#questions">Perguntas</a></li>
             <li>
               <a href="https://www.speedtest.net/server/52580" target="_blank"
                 >Speedtest</a
@@ -38,9 +40,11 @@
         <div class="sidebar" id="sidebar">
           <ul class="font-2-m gray-700">
             <img id="close-btn" src="./src/svg/close.svg" alt="" />
-            <li><a href="#home">Início</a></li>
+            <li><a href="#intro">Início</a></li>
+            <li><a href="#about">Sobre</a></li>
             <li><a href="#plans">Planos</a></li>
-            <li><a href="#questions">Dúvidas</a></li>
+
+            <li><a href="#questions">Perguntas</a></li>
             <li>
               <a href="https://www.speedtest.net/server/52580" target="_blank"
                 >Speedtest</a
@@ -64,17 +68,76 @@
     </header>
     <main class="main-bg">
       <!-- section intro -->
-      <section class="intro">
-        <div class="title container">
-          <h1 class="">
-            Venha para a <span class="gradient">PX Connect!</span>
-          </h1>
-          <p class="">
-            Internet
-            <span class="gradient font-2-xl">100% Fibra Óptica</span> que veio
-            para mudar
-            <span class="gradient font-2-xl">Itaitinga.</span>
-          </p>
+      <section class="intro-bg" id="intro">
+        <div class="intro">
+          <video autoplay="" muted="" loop="" class="video-container">
+            <source src="./src/video/background.mp4" type="video/mp4" />
+          </video>
+          <div class="title-bg">
+            <div class="title-intro container">
+              <h1 class="font-1-xxxl-b">
+                Venha para a
+                <span class="gradient">PX Connect!</span>
+              </h1>
+              <p class="font-1-l">
+                Internet
+                <span class="gradient">100% Fibra Óptica</span> que veio para
+                mudar
+                <span class="gradient">Itaitinga.</span>
+              </p>
+              <a href="#plans">
+                <button class="button-gradient button-intro font-2-m">
+                  nossos planos
+                </button>
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+      <!-- section about -->
+      <section class="about-bg" id="about">
+        <div class="about container">
+          <div class="title">
+            <h1 class="font-1-xxl-b">
+              Por que escolher a
+              <span class="gradient">PX Connect.</span>
+            </h1>
+          </div>
+          <div class="about-container">
+            <div class="about-box">
+              <img src="./src/svg/cable.svg" alt="" />
+              <h2 class="font-1-l-b yellow-900">fibra óptica</h2>
+              <p class="font-2-m gray-600">
+                Nossa tecnologia de ponta oferece qualidade e redundância na sua
+                conexão com uma rede 100% Fibra Óptica até sua casa.
+              </p>
+            </div>
+            <div class="about-box">
+              <img src="./src/svg/support-callcenter.svg" alt="" />
+              <h2 class="font-1-l-b yellow-900">Atendimento</h2>
+              <p class="font-2-m gray-600">
+                Contamos com o melhor tempo de atendimento humanizado da região,
+                proporcionando uma melhor qualidade e segurança pra você.
+              </p>
+            </div>
+            <div class="about-box">
+              <img src="./src/svg/server.svg" alt="" />
+              <h2 class="font-1-l-b yellow-900">Servidores</h2>
+              <p class="font-2-m gray-600">
+                Nós utilizamos os servidores do Youtube, Netflix, Google e
+                Facebook. Disponibilizamos de uma navegação muito mais rápida e
+                estável.
+              </p>
+            </div>
+            <div class="about-box">
+              <img src="./src/svg/document.svg" alt="" />
+              <h2 class="font-1-l-b yellow-900">Rede homologada</h2>
+              <p class="font-2-m gray-600">
+                Os nossos planos são 100% adequados à nova resolução da ANATEL.
+                Você recebe o que pagou de verdade 24x7.
+              </p>
+            </div>
+          </div>
         </div>
       </section>
       <!-- section plans -->
@@ -294,7 +357,7 @@
                     O que é fibra óptica?
                   </button>
                 </dt>
-                <dd class="font-2-m gray-600 active" id="question1">
+                <dd class="font-2-m yellow-900" id="question1">
                   A fibra óptica é uma estrutura de vidro cilíndrica,
                   transparente, flexível e com dimensões microscópicas,
                   parecidas com um fio de cabelo. É uma forma de transmissão que
@@ -312,7 +375,7 @@
                     O que é fibra óptica?
                   </button>
                 </dt>
-                <dd class="font-2-m gray-600" id="question2">
+                <dd class="font-2-m yellow-900" id="question2">
                   Aceitamos pagamentos parcelados em todos os cartões de
                   crédito. Para pagamentos à vista também aceitarmos PIX e
                   Boleto através do PagSeguro.sdfsdfsdfsdfsdf dsf sdf sd fsd f
@@ -329,7 +392,7 @@
                     O que é Wifi Performance?
                   </button>
                 </dt>
-                <dd class="font-2-m gray-600" id="question3">
+                <dd class="font-2-m yellow-900" id="question3">
                   É disponibilizado em comodato para os clientes um modem de
                   última geração. Dependendo da viabilidade técnica da região ou
                   dos aparelhos utilizados pelo cliente pode ser um modem que
@@ -347,7 +410,7 @@
                     Minha internet está lenta, o que faço?
                   </button>
                 </dt>
-                <dd class="font-2-m gray-600" id="question4">
+                <dd class="font-2-m yellow-900" id="question4">
                   <ul>
                     <li>
                       Desligue o modem e o roteador particular, caso possua;
@@ -372,7 +435,7 @@
                     Quais formas de pagamento?
                   </button>
                 </dt>
-                <dd class="font-2-m gray-600" id="question5">
+                <dd class="font-2-m yellow-900" id="question5">
                   Aceitamos pagamentos parcelados em todos os cartões de
                   crédito. Para pagamentos à vista também aceitarmos PIX e
                   Boleto através do PagSeguro.sdfsdfsdfsdfsdf dsf sdf sd fsd f
@@ -383,52 +446,7 @@
           </div>
         </div>
       </section>
-      <!-- section about -->
-      <section class="about-bg">
-        <div class="about container">
-          <div class="title">
-            <h1 class="font-1-xxl-b">
-              Por que escolher a
-              <span class="gradient">PX Connect.</span>
-            </h1>
-          </div>
-          <div class="about-container">
-            <div class="about-box">
-              <img src="./src/svg/cable.svg" alt="" />
-              <h2 class="font-1-l-b yellow-900">fibra óptica</h2>
-              <p class="font-2-m gray-600">
-                Nossa tecnologia de ponta oferece qualidade e redundância na sua
-                conexão com uma rede 100% Fibra Óptica até sua casa.
-              </p>
-            </div>
-            <div class="about-box">
-              <img src="./src/svg/support-callcenter.svg" alt="" />
-              <h2 class="font-1-l-b yellow-900">Atendimento</h2>
-              <p class="font-2-m gray-600">
-                Contamos com o melhor tempo de atendimento humanizado da região,
-                proporcionando uma melhor qualidade e segurança pra você.
-              </p>
-            </div>
-            <div class="about-box">
-              <img src="./src/svg/server.svg" alt="" />
-              <h2 class="font-1-l-b yellow-900">Servidores</h2>
-              <p class="font-2-m gray-600">
-                Nós utilizamos os servidores do Youtube, Netflix, Google e
-                Facebook. Disponibilizamos de uma navegação muito mais rápida e
-                estável.
-              </p>
-            </div>
-            <div class="about-box">
-              <img src="./src/svg/document.svg" alt="" />
-              <h2 class="font-1-l-b yellow-900">Rede homologada</h2>
-              <p class="font-2-m gray-600">
-                Os nossos planos são 100% adequados à nova resolução da ANATEL.
-                Você recebe o que pagou de verdade 24x7.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+
       <!-- footer -->
       <footer class="footer-bg">
         <div class="footer container">

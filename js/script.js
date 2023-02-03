@@ -13,6 +13,12 @@ sidebar.addEventListener("click", function () {
   sidebar.classList.remove("show-sidebar");
 });
 
+// video
+const video = document.querySelector(".video-container");
+video.playbackRate = 0.5;
+
+// velocidade de reprodução 50% da velocidade normal
+
 // questions
 const questions = document.querySelectorAll(".questions-item button");
 
@@ -68,3 +74,5 @@ controls.forEach((control) => {
     items[currentItem].classList.add("current-item");
   });
 });
+
+// others

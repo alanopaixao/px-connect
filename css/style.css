@@ -4,6 +4,7 @@
 @import "./components/colors.css";
 @import "./components/buttons.css";
 
+@import "./intro.css";
 @import "./about.css";
 @import "./plans.css";
 @import "./footer.css";
