@@ -27,9 +27,11 @@
 .title-intro {
   width: 100%;
 }
-
+.title-intro h1 {
+  padding-bottom: 10px;
+}
 .title-intro p {
-  padding-bottom: 20px;
+  padding-bottom: 30px;
 }
 
 @media screen and (max-width: 600px) {
