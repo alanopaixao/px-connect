@@ -32,7 +32,7 @@
   border-radius: 50%;
   cursor: pointer;
   border: none;
-  z-index: 90;
+  z-index: 40;
 }
 
 .arrow-right {
