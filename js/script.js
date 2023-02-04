@@ -37,8 +37,6 @@ function eventQuestion(question) {
 
 questions.forEach(eventQuestion);
 
-console.log(questions);
-
 // carrousel
 const controls = document.querySelectorAll(".control");
 let currentItem = 0;
