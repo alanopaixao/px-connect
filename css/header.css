@@ -15,9 +15,17 @@
   height: 100%;
 }
 
-.navmenu-logo {
+/* .navmenu-logo {
   padding: 15px 0;
-
+  z-index: 51;
+} */
+.navmenu-logo {
+  background-image: url("../src/img/pxconnect-logo.png");
+  background-repeat: no-repeat;
+  background-position: center center;
+  background-size: 100%;
+  width: 200px;
+  height: 100%;
   z-index: 51;
 }
 .nav-menu-main {
@@ -44,9 +52,7 @@
   .sidebar {
     z-index: 52;
   }
-  .navmenu-logo {
-    padding: 20px 0;
-  }
+
   .nav-menu .nav-menu-main {
     display: none;
   }
