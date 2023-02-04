@@ -102,9 +102,16 @@
     right: 20px;
     cursor: pointer;
   }
+  .sidebar [href^="#"],
+  .sidebar a[href^="https://www.speedtest"]
+  {
+    width: 100%;
+    padding: 20px 40px;
+  }
   .sidebar img:active {
     transform: scale(0.95);
   }
+
   .show-sidebar ul {
     transform: translateX(0%);
   }
