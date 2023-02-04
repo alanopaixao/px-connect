@@ -19,6 +19,7 @@
   --yellow-700: #fe9550;
   --yellow-800: #ff833e;
   --yellow-900: #ff6f2f;
+  --yellow-1000: #b9420e;
 }
 
 .gray-50 {
@@ -82,6 +83,9 @@
   color: var(--yellow-900);
 }
 
+.yellow-1000 {
+  color: var(--yellow-1000);
+}
 .gradient {
   transition: 0.5s;
   background-size: 200% auto;
@@ -96,6 +100,8 @@
   -webkit-text-fill-color: transparent;
   color: black;
   touch-action: manipulation;
+  text-overflow: ellipsis;
+  white-space: nowrap;
 }
 
 .gradient:hover {

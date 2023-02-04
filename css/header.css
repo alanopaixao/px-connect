@@ -14,11 +14,6 @@
   justify-content: space-between;
   height: 100%;
 }
-
-/* .navmenu-logo {
-  padding: 15px 0;
-  z-index: 51;
-} */
 .navmenu-logo {
   background-image: url("../src/img/pxconnect-logo.png");
   background-repeat: no-repeat;
@@ -35,7 +30,7 @@
 .nav-menu ul {
   display: flex;
   align-items: center;
-  gap: 20px;
+  gap: 30px;
 }
 .nav-menu li {
   transition: 0.2s all linear;
