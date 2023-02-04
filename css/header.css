@@ -49,8 +49,15 @@
 }
 
 @media screen and (max-width: 800px) {
+  .header-bg {
+    height: 60px;
+  }
   .sidebar {
     z-index: 52;
+  }
+
+  .navmenu-logo {
+    width: 150px;
   }
 
   .nav-menu .nav-menu-main {
@@ -62,8 +69,8 @@
     position: relative;
   }
   .sidebar-button {
-    height: calc(100% - 30px);
-    padding: 15px 0;
+    height: calc(100% - 20px);
+    padding: 10px 0;
   }
   .close-btn {
     z-index: 53;
@@ -90,7 +97,7 @@
   }
   .sidebar img {
     position: absolute;
-    height: 50px;
+    height: 45px;
     top: 10px;
     right: 20px;
     cursor: pointer;
