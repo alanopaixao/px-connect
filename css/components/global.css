@@ -18,5 +18,11 @@ html {
 }
 
 .title h1 {
-  padding-bottom: 80px;
+  padding-bottom: 60px;
+}
+
+@media screen and (max-width: 600px) {
+  .title h1 {
+    padding-bottom: 40px;
+  }
 }

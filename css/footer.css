@@ -71,6 +71,21 @@
   color: var(--yellow-900);
 }
 
+.whatsapp-float {
+  position: fixed;
+  display: flex;
+  bottom: 50px;
+  right: 40px;
+  transform: translateY(0px);
+  transition: 0.3s ease-in-out;
+  cursor: pointer;
+  z-index: 9999;
+}
+.whatsapp-float:hover {
+  transform: translateY(-5px);
+  transition: 0.5s ease-in-out;
+}
+
 @media screen and (max-width: 900px) {
   .footer {
     grid-template-columns: 1fr;
@@ -86,5 +101,9 @@
 @media screen and (max-width: 500px) {
   .footer-app-img {
     justify-content: space-evenly;
+  }
+  .whatsapp-float {
+    bottom: 50px;
+    right: 20px;
   }
 }

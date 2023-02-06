@@ -2,9 +2,9 @@
   position: fixed;
   width: 100%;
   backdrop-filter: blur(10px);
-  background-color: rgba(255, 255, 255, 0.5);
+  background-color: rgba(255, 255, 255, 0.8);
   border-bottom: 1px solid var(--gray-200);
-  box-shadow: 0px 10px 10px -15px rgba(0, 0, 0, 0.2);
+  box-shadow: 0px 10px 10px -10px rgba(0, 0, 0, 0.2);
   height: 70px;
   z-index: 50;
 }
@@ -15,7 +15,7 @@
   height: 100%;
 }
 .navmenu-logo {
-  background-image: url("../src/img/pxconnect-logo.png");
+  background-image: url("../src/svg/pxconnect-logoo.svg");
   background-repeat: no-repeat;
   background-position: center center;
   background-size: 100%;

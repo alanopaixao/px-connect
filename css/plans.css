@@ -8,6 +8,10 @@
   position: relative;
 }
 
+.plans .title h1 {
+  padding-bottom: 40px;
+}
+
 .plans-carrousel {
   display: flex;
   gap: 40px;

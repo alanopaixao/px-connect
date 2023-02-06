@@ -74,3 +74,13 @@ controls.forEach((control) => {
 });
 
 // others
+const intro = document.querySelector();
+window.addEventListener("scroll", function () {
+  let scrollPosition = window.scrollY;
+
+  if (scrollPosition > 100) {
+    document.getElementById("element").style.opacity = 1;
+  } else {
+    document.getElementById("element").style.opacity = 0;
+  }
+});
